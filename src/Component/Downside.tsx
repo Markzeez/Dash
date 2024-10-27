@@ -246,6 +246,66 @@ const data: EventData[] = [
     speaker: 'Jane Doe',
     status: 'Completed',
   },
+  {
+     name: 'AI in Healthcare Symposium',
+        date: '2024-12-1',
+        speaker: 'Dr Aisha Malik',
+        status: 'Completed',
+      },
+      {
+        name: 'Future of Fintech Forum',
+        date: '2024-10-25',
+        speaker: 'John Lee',
+        status: 'Completed',
+      },
+      {
+        name: 'Data Analytics in Business',
+        date: '2024-10-15',
+        speaker: 'Rachel Moore',
+        status: 'Completed',
+      },
+      {
+        name: 'Sustainable Energy Expo',
+        date: '2024-10-15',
+        speaker: 'Prof. Alan Green',
+        status: 'Completed',
+      },
+      {
+        name: 'Web3 Interface Workshop',
+        date: '2024-10-19',
+        speaker: 'Emily Zhang',
+        status: 'Completed',
+      },
+      {
+        name: 'Cybersecurity for Startups',
+        date: "2024 - 10 - 19",
+        speaker: 'Kevin Adams',
+        status: 'In-Progress',
+      },
+      {
+        name: 'Smart Cities Forum',
+        date: "2024 - 10 - 18",
+        speaker: 'Dr. Maria Hernandez',
+        status: 'In-Progress',
+      },
+      {
+        name: 'Tech Safari Mixer',
+        date: '2024-10-15',
+        speaker: 'Guest Panel',
+        status: 'In-Progress',
+      },
+      {
+        name: 'Cloud Innovation Summit',
+        date: '2024-10-15',
+        speaker: 'Jane Doe',
+        status: 'Completed',
+      },
+      {
+        name: 'Cloud Innovation Summit',
+        date: '2024-10-15',
+        speaker: 'Jane Doe',
+        status: 'Completed',
+      }
 ];
 
 // Pagination Logic
@@ -280,7 +340,7 @@ const Downside: React.FC = () => {
   const Pagination: React.FC = () => (
     <div className="py-4">
       <button
-        className={`px-2 py-2 border rounded-full ${
+        className={`px-4 py-2 border rounded-full ${
           currentPage === 1 ? 'opacity-50 cursor-not-allowed' : ''
         }`}
         onClick={() => setCurrentPage((prev) => prev - 1)}
@@ -290,7 +350,7 @@ const Downside: React.FC = () => {
       </button>
       <span>{`${currentPage} of ${totalPages}`}</span>
       <button
-        className={`px-2 py-2 border rounded-full ${
+        className={`px-4 py-2 border rounded-full ${
           currentPage === totalPages ? 'opacity-50 cursor-not-allowed' : ''
         }`}
         onClick={() => setCurrentPage((prev) => prev + 1)}

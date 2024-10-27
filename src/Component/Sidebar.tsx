@@ -7,7 +7,7 @@ import Profile from "./Profile";
 import { PiUserSoundFill } from "react-icons/pi";
 import { TbReportSearch } from "react-icons/tb";
 import { LuMessagesSquare } from "react-icons/lu";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Hamburger and close icons
 
 const Sidebar: React.FC = () => {
@@ -40,9 +40,9 @@ const Sidebar: React.FC = () => {
       >
         <nav className="flex flex-col mt-4 space-y-1">
           
-          <NavLink to="/">
+          <Link to="/">
             <MenuItem isCollapsed={isCollapsed} icon={<BiHome />} label="Home" />
-          </NavLink>
+          </Link>
           <MenuItem isCollapsed={isCollapsed} icon={<MdEvent />} label="Event" />
           <MenuItem isCollapsed={isCollapsed} icon={<PiUserSoundFill />} label="Speakers" />
           <MenuItem isCollapsed={isCollapsed} icon={<TbReportSearch />} label="Report" />
@@ -87,9 +87,9 @@ const Sidebar: React.FC = () => {
           >
             <nav className="flex flex-col mt-16 space-y-1">
              
-              <NavLink to="/">
+              <Link to="/">
                 <MenuItem isCollapsed={false} icon={<BiHome />} label="Home" />
-              </NavLink>
+              </Link>
               <MenuItem isCollapsed={false} icon={<MdEvent />} label="Event" />
               <MenuItem isCollapsed={false} icon={<PiUserSoundFill />} label="Speakers" />
               <MenuItem isCollapsed={false} icon={<TbReportSearch />} label="Report" />
