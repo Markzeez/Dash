@@ -68,7 +68,7 @@ const dataFormatter = (number: number | bigint ) => {
 
 const AreaCharts = () => {
   return (
-    <Card className='mt-3 max-w-[350px] lg:max-w-[640px] items-center'>
+    <Card className='mt-3 max-w-[350px] lg:max-w-[640px] mx-auto items-center'>
                
                 <BarChart
                 className='h-72 mt-4'

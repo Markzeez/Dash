@@ -25,7 +25,7 @@ const Sidebar: React.FC = () => {
   return (
     <div>
       {/* Mobile Hamburger Menu */}
-      <div className="lg:hidden fixed top-0 left-0 p-4 z-50 w-full flex justify-between items-center">
+      <div className="lg:hidden fixed top-[-20px] left-0 p-4 z-50 w-full flex justify-between items-center">
         <Logo isCollapsed={false} label="Full Logo" />
         <button onClick={toggleMobileMenu} className="text-2xl focus:outline-none">
           {isMobileMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
